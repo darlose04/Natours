@@ -33,4 +33,10 @@ body {
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top; /* crops out image depending on what the value is */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 75vh,
+    0 100%
+  ); /* starts in top left corner, move clockwise */
 }
